@@ -1,0 +1,45 @@
+# Ignore Composer vendor directory
+/vendor/
+
+# Ignore environment configuration files
+.env
+.env.local
+.env.*
+
+# Ignore cache and log files
+/cache/
+/logs/
+*.log
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+*.iml
+
+# Ignore operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Ignore PHPUnit and testing results
+/phpunit.xml
+/phpunit.xml.dist
+/test-results/
+
+# Ignore build files
+/build/
+/dist/
+
+# Ignore temporary files
+*.tmp
+*.bak
+
+# Ignore user uploads or generated content (adjust paths as needed)
+/uploads/
+/storage/
+
+# Ignore other sensitive files
+config.php
+settings.php
+
+# Add custom exclusions if required below
