@@ -1,0 +1,102 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+.form-header {
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.fill-up-form {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #555;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-input:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+.form-button {
+    grid-column: span 1;
+    padding: 14px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.form-button:hover {
+    background-color: #0056b3;
+    transform: none; /* Remove the hover effect */
+}
+
+.form-button:active {
+    background-color: #004085;
+    transform: none; /* Remove the active effect */
+}
+
+.student-fields,
+.work-field {
+    grid-column: span 1;
+    margin-top: 20px;
+}
+
+#spouse_name_field {
+    grid-column: span 1;
+}
+
+img {
+    max-width: 120px;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+img:hover {
+    transform: none; /* Remove the hover effect on the image */
+}

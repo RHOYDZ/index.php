@@ -1,0 +1,157 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #2c3e50;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px 0;
+}
+
+.sidebar-link:hover {
+    background-color: #34495e;
+    padding-left: 10px;
+}
+
+/* Main Content */
+.content {
+    margin-left: 270px;
+    padding: 20px;
+    background-color: #ecf0f1;
+    min-height: 100vh;
+}
+
+.content-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #3498db;
+}
+
+.welcome-message {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.no-transactions-message {
+    color: red;
+    font-size: 16px;
+    font-style: italic;
+}
+
+/* Table Styling */
+.transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table-header {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.table-row:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table-row:hover {
+    background-color: #f1f1f1;
+}
+
+.table-data {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-data:first-child {
+    font-weight: bold;
+}
+
+/* Paid/Not Paid Status Box */
+.paid-status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.paid-status.paid {
+    background-color: #27ae60;
+    color: white;
+}
+
+.paid-status.not-paid {
+    background-color: #e74c3c;
+    color: white;
+}
+
+/* Reference Code Color (Green if Paid) */
+.reference-paid {
+    color: #000000; /* Green text */
+    font-weight: bold;
+}
+
+/* Make sure the reference code stays green once marked as "Paid" */
+.reference-paid::after {
+    content: ""; /* Ensures the green color persists */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        margin-left: 0;
+    }
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .sidebar ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .sidebar-link {
+        padding: 8px;
+    }
+
+    .table-header {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .table-data {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

@@ -1,0 +1,135 @@
+/* General Reset and Box Model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fc; /* Light gray-blue background for a clean look */
+    color: #333;
+}
+
+/* Container Styling */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+h1 {
+    text-align: center;
+    color: #007bff;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* Account Info Section */
+.account-info {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Profile Section */
+.profile-section {
+    flex-shrink: 0;
+    width: 180px;
+    height: 180px;
+    border: 3px solid #007bff;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f7fc;
+}
+
+.profile-picture {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Personal Info Section */
+.personal-info {
+    flex-grow: 1;
+    padding: 25px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: inset 0 4px 12px rgba(0, 0, 0, 0.05);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* Style for each row of personal info */
+.personal-info p {
+    font-size: 1rem;
+    margin-bottom: 12px;
+    color: #555;
+}
+
+.personal-info strong {
+    color: #007bff;
+    font-weight: 600;
+}
+
+/* Account Actions */
+.account-actions {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 30px;
+    background-color: #007bff;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Button Styling for the Form */
+.account-actions button {
+    padding: 14px 30px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.account-actions button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Footer Styling (if needed) */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #999;
+}
+
+footer p {
+    font-size: 0.9rem;
+}

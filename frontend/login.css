@@ -1,0 +1,189 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e3f2fd; /* Light blue background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Login Container */
+.login-container {
+    background-color: #ffffff; /* White background */
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Title */
+.login-title {
+    color: #0d47a1; /* Dark blue */
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Form */
+.login-form .form-group {
+    margin-bottom: 15px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #b3e5fc; /* Light blue border */
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus {
+    border-color: #0288d1; /* Medium blue on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(2, 136, 209, 0.5);
+}
+
+.login-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0288d1; /* Medium blue */
+    border: none;
+    border-radius: 5px;
+    color: #ffffff; /* White text */
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login-form button:hover {
+    background-color: #0277bd; /* Slightly darker blue */
+}
+
+/* Register Link */
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #0d47a1; /* Dark blue */
+}
+
+.register-link a {
+    color: #0288d1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+/* register theme */
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e3f2fd; /* Light blue background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Register Container */
+.register-container {
+    background-color: #ffffff; /* White background */
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Title */
+.register-title {
+    color: #0d47a1; /* Dark blue */
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Form */
+.register-form .form-group {
+    margin-bottom: 15px;
+}
+
+.register-form .form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #0d47a1; /* Dark blue */
+}
+
+.register-form .form-input,
+.register-form .form-select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #b3e5fc; /* Light blue border */
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.register-form .form-input:focus,
+.register-form .form-select:focus {
+    border-color: #0288d1; /* Medium blue on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(2, 136, 209, 0.5);
+}
+
+.register-form .form-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0288d1; /* Medium blue */
+    border: none;
+    border-radius: 5px;
+    color: #ffffff; /* White text */
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.register-form .form-button:hover {
+    background-color: #0277bd; /* Slightly darker blue */
+}
+
+/* Login Link */
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #0d47a1; /* Dark blue */
+}
+
+.login-link a {
+    color: #0288d1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}

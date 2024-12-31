@@ -1,0 +1,71 @@
+/* General styling for the welcome section */
+.welcome-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f4f4f9;
+    border-radius: 0;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Styling for the welcome text */
+.welcome-text-container {
+    flex: 1;
+    text-align: left;
+}
+
+.welcome-heading {
+    font-size: 3em;
+    color: #007bff; /* Blue color for heading */
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Styling for the spinner container */
+.spinner-container {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for the spinner (circle logo) */
+.spinner {
+    width: 100px;
+    height: 100px;
+    animation: spin 2s linear infinite;
+}
+
+/* Spinner animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .welcome-heading {
+        font-size: 2.2em; /* Smaller font size for tablets */
+    }
+
+    .spinner {
+        width: 80px; /* Smaller spinner on tablets */
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome-heading {
+        font-size: 1.8em; /* Even smaller font size for mobile */
+    }
+
+    .spinner {
+        width: 60px; /* Smaller spinner for mobile */
+        height: 60px;
+    }
+}

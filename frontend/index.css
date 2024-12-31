@@ -1,0 +1,506 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fb; /* Light background */
+    color: #333;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    min-height: 100vh; /* Ensure body takes full height */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav links */
+    align-items: center;
+    padding: 15px 30px; /* Adjusted padding for better balance */
+    background-color: #0066cc; /* Blue background */
+    border-radius: 25px; /* Rounded corners */
+    margin: 0 auto; /* Center navbar */
+    max-width: 1200px; /* Limit maximum width */
+    position: fixed; /* Fixed at the top */
+    top: 10px; /* Position at the top */
+    left: 0; /* Span full width */
+    right: 0; /* Span full width */
+    z-index: 1000; /* Above other content */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+/* Hide hamburger icon by default (on larger screens) */
+.hamburger {
+    display: none; /* Hidden by default */
+    font-size: 30px;
+    color: white;
+}
+
+/* Add padding-top to body or next section to prevent content from being hidden behind the navbar */
+body {
+    padding-top: 80px; /* Adjust for navbar height */
+}
+
+/* Logo and Hamburger container */
+.navbar-content {
+    display: flex;
+    justify-content: space-between; /* Space out logo and hamburger */
+    align-items: center;
+    width: 100%;
+}
+
+/* Logo */
+.navbar .logo {
+    display: flex;
+    align-items: center; /* Vertically center the logo */
+    flex: 1; /* Allow the logo container to take space on the left */
+}
+
+.navbar .logo img {
+    height: 50px; /* Logo size */
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center; /* Center nav links vertically */
+    flex: 2; /* Allow nav links to take more space */
+    justify-content: flex-end; /* Align nav links to the right */
+}
+
+.nav-links li a {
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px; /* Adjust padding for better balance */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transform for scaling */
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+}
+
+.nav-links li a:hover {
+    background-color: #023e8a; /* Darker blue on hover */
+    color: #f0f0f0; /* Light hover text color */
+    transform: scale(1.1); /* Slightly enlarge the text */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Add shadow effect */
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li a {
+    color: #0066cc;
+    padding: 8px;
+    display: block;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transform for scaling */
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.1); /* Slightly enlarge the text */
+    color: #005bb5; /* Match the hover effect */
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack logo and nav links vertically */
+        padding: 10px; /* Adjust padding for mobile */
+    }
+
+    /* Align logo and hamburger menu horizontally */
+    .navbar-content {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack nav links vertically */
+        gap: 15px; /* Increase gap between nav links */
+        display: none; /* Hide nav links by default */
+    }
+
+    /* Show hamburger icon only on small screens */
+    .hamburger {
+        display: block; /* Show on small screens */
+    }
+
+    .nav-links.show {
+        display: flex; /* Show nav links when hamburger is clicked */
+    }
+}
+
+
+
+.image-section {
+    width: 720px;
+    height: 360px;
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    overflow: hidden; /* Hide any part of the image that overflows */
+    margin: 0 auto; /* Center the section horizontally within its parent */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Light shadow for depth */
+  }
+  
+  .image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire section without distortion */
+  }
+  
+
+
+
+
+/* Welcome Section */
+.pal-welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f4f8; /* Light background */
+    padding: 30px 40px; /* Padding for balance */
+    background-color: #0066cc; /* Blue background */
+    margin: 20px auto; /* Center the section */
+    max-width: 1200px; /* Limit the maximum width to match footer */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+/* Header - Logo and Title */
+.pal-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%; /* Make sure it takes up full width */
+}
+
+.pal-logo {
+    width: 50px; /* Adjust logo size */
+    height: 50px;
+    margin-right: 15px; /* Space between logo and text */
+}
+
+.pal-welcome-heading {
+    font-size: 2rem; /* Heading size */
+    color: white; /* White text color for contrast */
+    font-family: 'Arial', sans-serif;
+    margin: 0; /* Remove margin for tighter spacing */
+}
+
+/* About Text */
+.pal-about-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: white; /* Text color for contrast */
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Read More Button */
+.pal-read-more-container {
+    margin-top: 20px;
+}
+
+.pal-read-more-btn {
+    text-decoration: none;
+    padding: 8px 15px;
+    background-color: #004b8d; /* Darker blue */
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.pal-read-more-btn:hover {
+    background-color: #023e8a; /* Darker blue on hover */
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .pal-welcome-section {
+        padding: 20px;
+        width: 100%; /* Full width for mobile */
+    }
+
+    .pal-welcome-heading {
+        font-size: 1.5rem; /* Smaller heading on mobile */
+    }
+
+    .pal-about-text {
+        font-size: 1rem; /* Smaller text on mobile */
+    }
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #0077b6; /* Primary blue */
+    width: 100%;
+    max-width: 1200px; /* Increase max-width to match the content's width */
+    margin: 20px auto; /* Center the footer horizontally */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Container */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+}
+
+/* Footer Columns Shared Styles */
+.footer-left, .footer-center, .footer-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Footer Left */
+.footer-left {
+    align-items: flex-start;
+}
+
+.footer-left p {
+    font-size: 1.1rem; 
+    line-height: 1.4;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Footer Center */
+.footer-center {
+    align-items: center; 
+}
+
+.footer-center .social-link {
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+/* Hover effect for Social Links (Facebook, Gmail) */
+.footer-center .social-link:hover {
+    background-color: #023e8a; /* Darker blue hover */
+    color: #f0f0f0;
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer Right */
+.footer-right {
+    align-items: flex-end;
+}
+
+.footer-right a {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: flex-end;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+/* Hover effect for Terms, Privacy, Contact Us */
+.footer-right a:hover {
+    color: #f1faee; /* Light hover color */
+    background-color: #00b4d8; /* Light blue background */
+    text-decoration: underline;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+/* Ensure alignment across all sections */
+.footer-container > div {
+    height: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-left, .footer-center, .footer-right {
+        align-items: center;
+    }
+}
+
+
+
+
+/* Container for all the documents */
+.documents-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: #f4f7fb;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for individual document sections */
+.document {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Align content and button properly */
+    gap: 15px;
+    min-height: 250px; /* Increased height for the document boxes */
+}
+
+/* Document Title Styling */
+.document-title {
+    font-size: 1.5rem;
+    color: #333333;
+    margin: 0;
+}
+
+/* Button Styling */
+.get-button {
+    padding: 10px;
+    background-color: #0077b6;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    align-self: stretch; /* Ensures buttons fill the width of their container */
+}
+
+/* Button Hover Effect */
+.get-button:hover {
+    background-color: #00b4d8;
+    transform: scale(1.05);
+}
+
+/* Specific styles for Barangay Clearance */
+.barangay-clearance {
+    border-left: 4px solid #0077b6;
+    padding-left: 15px;
+}
+
+/* Specific styles for Business Permit */
+.business-permit {
+    border-left: 4px solid #00b4d8;
+    padding-left: 15px;
+}
+
+/* Specific styles for Indigency Clearance */
+.indigency-clearance {
+    border-left: 4px solid #009688;
+    padding-left: 15px;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .documents-container {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .document {
+        margin-bottom: 20px;
+        min-height: 200px; /* Adjusted height for mobile */
+    }
+}
+
+
+
+/* Styling for the Google Map Section */
+.google-map-section {
+    padding: 30px;
+    background-color: #f4f7fb;
+    text-align: center;
+}
+
+.google-map-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Styling for the map container */
+.map-container {
+    max-width: 900px; /* Set a max width to make the map less wide */
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    width: 100%; /* Ensures the iframe scales responsively */
+    height: 450px; /* Fixed height */
+}
+
+/* Responsive adjustments for the map */
+@media screen and (max-width: 768px) {
+    .map-container iframe {
+        height: 300px; /* Adjusted height for mobile view */
+    }
+}
+
+
+
+
+
+
+
+
